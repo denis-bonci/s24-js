@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  node:
+    build: .
+    user: node
+    command: npm test
+    working_dir: /app
+    volumes:
+      - ${PWD}:/app
